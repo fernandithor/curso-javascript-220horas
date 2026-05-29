@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    class Usuario {
+
+        constructor(nombre, contraseña, perfil) {
+            this.nombre = nombre;
+            this.contraseña = contraseña;
+            this.perfil = perfil;
+        }
+
+        saludar() {
+            return "Soy un usuario y os saludo desde el código";
+        }
+
+        login() {
+            return "Estoy haciendo login";
+        }
+
+        logout() {
+            return "Estoy haciendo logout";
+        }
+    }
+
+    class Estudiante extends Usuario {
+
+        constructor(nombre, contraseña, perfil, curso) {
+            super(nombre, contraseña, perfil);
+            this.curso = curso;
+        }
+
+        estudia(tema) {
+            return "Estoy estudiando: " + tema;
+        }
+    }
+
+    let usuario_maria   = new Usuario("Maria",  "12345", "administrador");
+    let usuario_juan    = new Usuario("Juan",   "12345", "usuario standard");
+    let usuario_sandra  = new Usuario("Sandra", "12345", "administrador");
+    let estudiante_pedro = new Estudiante("Pedro", "12345", "estudiante", "Excel");
+
+    document.write(usuario_maria.contraseña);
+    document.write("<br/>");
+    document.write(usuario_maria.saludar());
+    document.write("<br/>");
+    document.write(estudiante_pedro.saludar());
+    document.write("<br/>");
+    document.write(estudiante_pedro.estudia("JavaScript"));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let edad=prompt("Introduce tu edad");
+
+
+        if(edad>=18) {
+
+        
+
+            document.write("Eres mayor de edad <br>");
+            
+            let importe=prompt("Introduce tus ahorros");
+
+            if(importe>=150) document.write("Puedes obtener el carnet")
+
+            else document.write("El importe no es suficiente");
+
+        }
+        else {
+            document.write("Aun no tienes la edad necesaria para obtener el carnet<br>")
+
+            let edadCandidato=18-edad;
+
+            document.write("Vuelve dentro de " + edadCandidato + " años");
+        }
+        document.write("<br>");
+
+        document.write("Acabamos de evaluar la edad del candidato");
+
+
+    </script>
+</body>
+</html>

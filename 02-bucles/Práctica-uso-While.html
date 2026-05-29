@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numAleatorio=parseInt(Math.random()*100)
+        let numUsuario=prompt("Introduce un nº, por favor");
+        let intentos=0
+
+        while(numUsuario!=numAleatorio){
+
+            intentos++;
+
+            if(numUsuario<numAleatorio) alert("El nº es mas alto");
+
+            if(numUsuario>numAleatorio) alert("El nº es más bajo");
+
+            numUsuario=prompt("Introduce un nº, por favor");
+
+        }
+
+        document.write("Correcto!. Lo has adivinado en " + intentos + " intentos");
+
+
+    </script>
+
+
+
+</body>
+</html>

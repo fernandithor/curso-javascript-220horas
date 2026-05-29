@@ -1,0 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplicar por 5</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    // Creamos un array vacío, como una lista de la compra en blanco.
+    // Aquí guardaremos los 5 números que introduzca el usuario.
+    // En este momento: numeros = []
+    let numeros = [];
+
+
+    // PRIMER BUCLE: for clásico
+    // Su misión es rellenar el array pidiendo 5 números al usuario.
+    //
+    // - let i = 0   → el contador empieza en 0 (los arrays empiezan en 0)
+    // - i < 5       → se repite mientras i sea menor que 5 (vueltas: 0,1,2,3,4)
+    // - i++         → al final de cada vuelta, i aumenta en 1
+    //
+    // Lo que ocurre en cada vuelta:
+    //   Vuelta 1 → i=0 → prompt pregunta → usuario escribe 10 → numeros[0] = 10
+    //   Vuelta 2 → i=1 → prompt pregunta → usuario escribe 20 → numeros[1] = 20
+    //   Vuelta 3 → i=2 → prompt pregunta → usuario escribe 30 → numeros[2] = 30
+    //   Vuelta 4 → i=3 → prompt pregunta → usuario escribe 40 → numeros[3] = 40
+    //   Vuelta 5 → i=4 → prompt pregunta → usuario escribe 50 → numeros[4] = 50
+    //   Vuelta 6 → i=5 → 5 < 5 es falso → el bucle PARA
+    //
+    // Al terminar: numeros = [10, 20, 30, 40, 50]
+    for (let i = 0; i < 5; i++) {
+
+      // prompt() abre una ventana y recoge lo que escribe el usuario (como texto)
+      // parseInt() convierte ese texto en número entero
+      // numeros[i] guarda el resultado en la posición i del array
+      numeros[i] = parseInt(prompt("Introduce un número, por favor"));
+
+    }
+
+
+    // Escribimos un título en la página antes de mostrar los resultados.
+    // <br> es un salto de línea en HTML, para que lo siguiente aparezca debajo.
+    document.write("El resultado de multiplicar por 5 los números es: <br>");
+
+
+    // SEGUNDO BUCLE: for...of
+    // Su misión es recorrer el array ya relleno y mostrar cada número multiplicado por 5.
+    //
+    // A diferencia del for clásico, aquí no hay índice i.
+    // En cada vuelta, la variable "numero" toma directamente el valor del siguiente elemento.
+    //
+    // Lo que ocurre en cada vuelta:
+    //   Vuelta 1 → numero = 10 → escribe "10 x 5 = 50"
+    //   Vuelta 2 → numero = 20 → escribe "20 x 5 = 100"
+    //   Vuelta 3 → numero = 30 → escribe "30 x 5 = 150"
+    //   Vuelta 4 → numero = 40 → escribe "40 x 5 = 200"
+    //   Vuelta 5 → numero = 50 → escribe "50 x 5 = 250"
+    //   No quedan más elementos → el bucle PARA
+    for (numero of numeros) {
+
+      // Construimos la línea de texto:
+      // numero        → el número actual (ej: 10)
+      // " x 5 = "    → texto fijo
+      // numero * 5    → el resultado de la multiplicación (ej: 50)
+      // "<br>"        → salto de línea para que cada resultado aparezca en una línea nueva
+      document.write(numero + " x 5 = " + numero * 5 + "<br>");
+
+    }
+
+    // RESULTADO FINAL EN PANTALLA:
+    // El resultado de multiplicar por 5 los números es:
+    // 10 x 5 = 50
+    // 20 x 5 = 100
+    // 30 x 5 = 150
+    // 40 x 5 = 200
+    // 50 x 5 = 250
+
+  </script>
+
+</body>
+</html>
+```

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function calculo_hipotenusa(catetoA, catetoB){
+
+            //function cuadrado_cateto(cateto) {return cateto*cateto}
+
+            const cuadrado_cateto=cateto=> cateto*cateto
+            
+            return Math.sqrt(cuadrado_cateto(catetoA) + cuadrado_cateto(catetoB));
+        }
+
+        let catetoA=prompt("Introduce la longitud del primer cateto");
+
+        let catetoB=prompt("Introduce la longitud del segundo cateto");
+
+        document.write(calculo_hipotenusa(catetoA,catetoB));
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

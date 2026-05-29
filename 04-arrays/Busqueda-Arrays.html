@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let personas=["Antonio", "María", "Ana", "Óscar", "Paco", "Antonio", "Sara", "Antonio"];
+
+        function encuentraTodos(elArray, elemBuscado){
+
+            let resultados=[];
+
+            longitud=elArray.length;
+            
+            posicion=0;
+
+            while(posicion<longitud) {
+
+                posicion=elArray.indexOf(elemBuscado, posicion);
+
+                if(posicion==-1) break;
+
+                resultados.push(posicion);
+
+                posicion+=1;
+
+            }
+
+                return resultados;
+        }
+
+        document.write(encuentraTodos(personas, "Antonio"));
+
+    </script>
+
+
+
+
+</body>
+</html>
