@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        class MapTipos extends Map {
+
+            constructor(valores){
+
+                super(valores);
+
+            }
+
+        }
+
+        let mis_datos=[["nombre", "Juan"], ["apellido", "Díaz"], ["edad", 19]];
+        let datos=new MapTipos(mis_datos);
+        document.write(datos.get("edad"));
+
+
+    </script>
+
+
+
+</body>
+</html>
