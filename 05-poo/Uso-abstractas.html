@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Persona{
+
+            habla(){
+
+            }
+
+        }
+
+        class Empleado extends Persona{
+
+            habla(){
+                
+                return "El empleado habla español";
+            }
+
+        }
+    
+        class Alumno extends Persona{
+
+            habla(){
+
+                return "El alumno habla chino";
+
+            }
+
+        }
+
+        emp1=new Empleado();
+        document.write(emp1.habla());
+
+        alu1=new Alumno();
+        document.write(alu1.habla());
+
+    </script>
+
+</body>
+</html>
