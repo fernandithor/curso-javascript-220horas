@@ -19,3 +19,5 @@ Contenido:
 29 mayo 2026 - subida estructura ya trabajada.
 
 01 junio 2026 - Map con herencia y super()
+
+08 junio 2026 - Clases Abstractas
