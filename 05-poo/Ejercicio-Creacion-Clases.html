@@ -33,9 +33,30 @@
         }
 
     }
+   class Furgoneta extends Vehiculo {
 
-    const coche1 = new Vehiculo("Laguna", "Renault", 15000, 80000);
-    coche1.mostrarInfo(); // → "Renault Laguna"
+        constructor(modelo, marca, precio, km, carga) {
+            super(modelo, marca, precio, km);
+            this.carga = carga;  
+        }
+
+        getCarga()        { return this.carga; }
+        setCarga(carga)   { this.carga = carga; }
+
+        mostrarInfo() {
+            console.log(this.marca + " " + this.modelo + " - Carga: " + this.carga + "kg");
+        }
+    }
+
+    const furgo1 = new Furgoneta("Sprinter", "Mercedes", 30000, 50000, 1500);
+    furgo1.mostrarInfo(); 
+
+    console.log(furgo1.getMarca());
+    console.log(furgo1.getCarga());
+
+    furgo1.setCarga(2000);
+    console.log(furgo1.getCarga());
+
 
 </script>
 
