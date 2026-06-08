@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    class Vehiculo {
+
+        constructor(modelo, marca, precio, km) {
+            this.modelo = modelo;
+            this.marca   = marca;
+            this.precio  = precio;
+            this.km      = km;
+        }
+
+        getModelo() { return this.modelo; }
+        getMarca()  { return this.marca;  }
+        getPrecio() { return this.precio; }
+        getKm()     { return this.km;     }
+
+        setModelo(modelo) { this.modelo = modelo; }
+        setMarca(marca)   { this.marca  = marca;  }
+        setPrecio(precio) { this.precio = precio; }
+        setKm(km)         { this.km     = km;     }
+
+        mostrarInfo() {
+            console.log(this.marca + " " + this.modelo);
+        }
+
+    }
+
+    const coche1 = new Vehiculo("Laguna", "Renault", 15000, 80000);
+    coche1.mostrarInfo(); // → "Renault Laguna"
+
+</script>
+
+</body>
+</html>
