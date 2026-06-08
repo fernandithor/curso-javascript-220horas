@@ -20,4 +20,4 @@ Contenido:
 
 01 junio 2026 - Map con herencia y super()
 
-08 junio 2026 - Clases Abstractas
+08 junio 2026 - Clases Abstractas; Ejercicio clases vehículo;
