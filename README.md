@@ -23,3 +23,5 @@ Contenido:
 08 junio 2026 - Clases Abstractas; Ejercicio clases vehículo;
 
 09 junio 2026 - Introduccion a los Modulos con un ejemplo sencillo.
+
+10 junio 2026 - Practica calculo IVA con modulos.
