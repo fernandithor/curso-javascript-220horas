@@ -11,14 +11,35 @@
 
         import {calculo_IVA} from "./Calculos_financieros.js";
 
-        let coste=15000;
+        
 
-        let iva=calculo_IVA(coste);
+        let contenedor=document.getElementById("espacio");
 
-        console.log(coste+iva);
+        let origen=document.getElementById("origen");
+
+        let elBoton=document.getElementById("conversor");
+
+        elBoton.addEventListener("click", ()=>{
+
+            
+            contenedor.innerHTML=parseInt(origen.value)+calculo_IVA(origen.value);
+
+        })
 
 
     </script>
+
+    <input type="text" id="origen"><br/><br/>
+
+    <button id="conversor">Calcular</button>
+
+    <br/><br/>
+
+    <div id="espacio">
+
+
+
+    </div>
 
 
 </body>
