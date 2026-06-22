@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+let frutas = new Set(["manzana", "banana", "naranja", "manzana", "banana"]);
+
+console.log(frutas);
+
+frutas.add("uva");
+frutas.add("manzana");
+
+console.log(frutas);
+
+console.log(frutas.has("banana"));
+console.log(frutas.has("sandía"));
+
+console.log(frutas.size);
+
+for (let fruta of frutas) {
+    console.log(fruta);
+}
+
+frutas.delete("banana");
+console.log(frutas);
+
+let notas = [8, 9, 7, 8, 10, 7, 9, 6];
+let notasUnicas = [...new Set(notas)];
+console.log(notasUnicas);
+
+let arrayFrutas = Array.from(frutas);
+console.log(arrayFrutas);
+
+
+</script>
+
+
+</body>
+</html>
