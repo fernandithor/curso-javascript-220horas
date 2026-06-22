@@ -31,3 +31,5 @@ Contenido:
 10 junio 2026 - Practica calculo IVA con modulos.
 
 22 junio 2026 - Practica con Sets.
+
+22 junio 2026 - Practica con WeakSets.
