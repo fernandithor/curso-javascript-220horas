@@ -18,7 +18,7 @@ Contenido:
 
 -07-modulos
 
--08-sets
+-08-sets y map
 
 29 mayo 2026 - subida estructura ya trabajada.
 
