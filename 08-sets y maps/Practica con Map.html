@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    
+    let persona = new Map();
+
+    persona.set("nombre", "Fernando");
+    persona.set("edad", 25);
+    persona.set("ciudad", "Madrid");
+
+    console.log(persona.get("nombre"));
+    console.log(persona.get("edad"));
+    console.log(persona.has("ciudad"));
+    console.log(persona.size);
+
+    persona.delete("edad");
+    console.log(persona);
+
+    for (let [clave, valor] of persona) {
+        console.log(clave + ": " + valor);
+}
+    </script>
+
+
+
+</body>
+</html>
