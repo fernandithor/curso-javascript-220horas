@@ -33,3 +33,5 @@ Contenido:
 22 junio 2026 - Practica con Sets.
 
 22 junio 2026 - Practica con WeakSets.
+
+23 junio 2026 - Practica con Map.
