@@ -37,3 +37,5 @@ Contenido:
 23 junio 2026 - Practica con Map.
 
 23 junio 2026 - Practica con Symbol.
+
+26 junio 2026 - Practica con DOM.
