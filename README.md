@@ -39,3 +39,5 @@ Contenido:
 23 junio 2026 - Practica con Symbol.
 
 26 junio 2026 - Practica con DOM.
+
+28 junio 2026 - Practica con QuerySelector en DOM.
