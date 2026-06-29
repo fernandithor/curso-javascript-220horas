@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const nums = [1, 2, 3];
+        const iter = nums[Symbol.iterator]();
+
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+        console.log(iter.next());
+
+        for (const n of nums) {
+        console.log(n);
+        }
+
+        function* contar() {
+        yield 1;
+        yield 2;
+        yield 3;
+        }
+
+        const gen = contar();
+        console.log(gen.next());
+        console.log(gen.next());
+        console.log(gen.next());
+
+
+    </script>
+
+
+</body>
+</html>
