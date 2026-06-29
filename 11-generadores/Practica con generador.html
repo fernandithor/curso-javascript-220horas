@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function* saludo() {
+    yield "hola";
+    yield "qué";
+    yield "tal";
+    }
+
+    const gen = saludo();
+
+    console.log(gen.next()); // { value: 'hola', done: false }
+    console.log(gen.next()); // { value: 'qué',  done: false }
+    console.log(gen.next()); // { value: 'tal',  done: false }
+    console.log(gen.next()); // { value: undefined, done: true }
+    </script>
+</body>
+</html>
