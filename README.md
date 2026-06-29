@@ -41,3 +41,5 @@ Contenido:
 26 junio 2026 - Practica con DOM.
 
 28 junio 2026 - Practica con QuerySelector en DOM.
+
+29 junio 2026 - Practica Iteradores.
