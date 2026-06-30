@@ -45,3 +45,5 @@ Contenido:
 29 junio 2026 - Practica Iteradores.
 
 29 junio 2026 - Practica Generadores.
+
+30 junio 2026 - Proyecto "carro de la compra"
