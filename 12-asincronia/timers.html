@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function mostrarMensaje(){
+
+            document.write("Este texto se muestra cada 3 segundos");
+        }
+
+
+        document.write("Inicio de la ejecución del programador/>");
+
+        setTimeout(mostrarMensaje, 3000);
+
+        document.write("Fin de la ejecución");
+
+        function otraTarea(){
+            document.write("Realizando otras tareas");
+        }
+
+        var idintervalo=setInterval(otraTarea, 1000);
+
+        setTimeout(function(){
+            clearInterval(idintervalo);
+        }, 8000);
+
+        
+    </script>
+
+
+
+</body>
+</html>
